@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from bitcoinvanitygen.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Feb 2017 11:45:40 GMT -->
+<head>
+<title>BitcoinVanityGen.com - Bitcoin Vanity Address Generator Online, Free Bitcoin Vanity Address Generaton</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta name="robot" content="index, follow">
+<meta name="Description" content="Bitcoin vanity address generator online, secure, easy, fast and free. Generate your Bitcoin address online"/>
+<meta name="Keywords" content="bitcoin vanity address generator online, bitcoin, vanity, address, generator, custom address, custom bitcoin address, bitcoin vanity address generator, bitcoin vanity address, bitcoin vanity, bitcoin address generator, free bitcoin address, online, free"/>
+<link rel="stylesheet" href="btc.css" type="text/css">
+<link rel="stylesheet" href="pure.css">
+</head>
+<body style="margin: 0px; padding 0px;background: #454545;">
+<table width="60%" align="center" border="0" cellspacing="0" cellpadding="0">
+<tr id="5228582">
+<td align="center" colspan="6">
+<br><br><br>
+<a href="bitcoinvanityaddress.html" alt="Bitcoin Vanity Address FAQ" title="Bitcoin Vanity Address FAQ"><span style="color: #979797;">What is Bitcoin Vanity address? | FAQ | Contact</span></a>
+<br><br>
+</td>
+</tr>
+<tr id="55252">
+<td width="20%" align="right" class="genmed" valign="top">
+<br><br>
+<table>
+<tr>
+<td colspan="3" class="grey"><b>Characters:</b></td>
+</tr>
+<tr>
+<td class="grey">1&nbsp;&nbsp;</td><td class="grey">free</td>
+</tr>
+<tr>
+<td class="grey">2</td><td class="grey">free</td>
+</tr>
+<tr>
+<td class="grey">3</td><td class="grey">free</td>
+</tr>
+<tr>
+<td class="grey">4</td><td class="grey">free</td>
+</tr>
+<tr>
+<td class="grey">5</td><td class="grey">free</td>
+</tr>
+<tr>
+<td class="grey">6 </td><td class="grey" style="color:#00cc00">free</td>
+</tr>
+<tr>
+<td class="grey">7</td><td class="grey">0.06 BTC</td>
+</tr>
+<tr>
+<td class="grey">8 </td><td class="grey">0.3 BTC</td>
+</tr>
+<tr>
+<td class="grey">9</td><td class="grey">0.8 BTC</td>
+</tr>
+</table>
+</td>
+<td width="20%" align="center"><a href="index-2.html" alt="bitcoin vanity" title="bitcoin vanity"><img src="img/logo.jpg" alt="bitcoin vanity" title="bitcoin vanity" border="0"></a></td>
+<td width="20%" class="genmed" valign="top">
+<br><br>
+<table>
+<tr>
+<td colspan="3" class="grey"><b>Case sensitive:</b></td>
+</tr>
+<tr>
+<td class="grey">1&nbsp;&nbsp;</td><td class="grey"> free</td>
+</tr>
+<tr>
+<td class="grey">2</td><td class="grey">free</td>
+</tr>
+<tr>
+<td class="grey">3</td><td class="grey">free</td>
+</tr>
+<tr>
+<td class="grey">4</td><td class="grey">free</td>
+</tr>
+<tr>
+<td class="grey">5</td><td class="grey" style="color:#00cc00">free </td>
+</tr>
+<tr>
+<td class="grey">6</td><td class="grey">0.06 BTC</td>
+</tr>
+<tr>
+<td class="grey">7</td><td class="grey">0.4 BTC</td>
+</tr>
+<tr>
+<td class="grey">8</td><td class="grey">1.7 BTC</td>
+</tr>
+<tr>
+<td class="grey">9</td><td class="grey">impossible for now</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="6" align="center" width="100%">
+ 
+<span id="ill">&nbsp;</span><br>
+<form class="pure-form pure-form-aligned" action="http://bitcoinvanitygen.com/index.php" method="post">
+<fieldset>
+<div class="pure-control-group">
+<label for="gen">Type letters</label>
+<input id="gen" name="gen" type="text" placeholder="ex. Your name" style="width:380px;color:#000" onKeyUp="validatephone(this); test();" autocomplete="off">
+</div>
+<script type="text/javascript">
+  document.getElementById("gen").focus();
+</script>
+<div class="pure-control-group">
+<label for="ex">Example address</label>
+<input id="ex" name="ex" type="text" placeholder="waiting..." disabled style="width:380px;color:#000;">
+</div>
+<div class="pure-control-group" s>
+<label for="price">Price</label>
+<input id="price" type="email" placeholder="Free" disabled style="width:380px;color:#000;">
+</div>
+<label for="case" class="pure-checkbox">
+<input id="case" name="case" type="checkbox" onClick="test()"> Case sensitive
+</label>
+<script>
+
+function validatephone(xxxxx) 
+{
+    var maintainplus = '';
+    var numval = xxxxx.value
+    if ( numval.charAt(0)=='+' )
+    {
+        var maintainplus = '';
+    }
+    curphonevar = numval.replace(/[Ol0I]/g,'');
+    if (numval != curphonevar){
+	document.getElementById('ill').innerHTML = '<span style="color: #ff0000;">You tried illegal address characters (O,l,0 or I)</span> <a href="bitcoinvanityaddress.html"><span style="color: #979797;">FAQ</span></a>';	
+    }
+    xxxxx.value = maintainplus + curphonevar;
+
+    var maintainplus = '';
+    xxxxx.focus;
+}
+
+function test (){
+	var txt = document.getElementById('gen').value;
+var matches = txt.match(/\d+/g);
+if (matches != null) {
+//    alert('number');
+	document.getElementById("case").checked = true;		
+}
+	var free = "Free";
+if(document.getElementById('case').checked){
+        if (txt.length  == 0){
+                document.getElementById('ex').value = "1" + txt + "zB5XMLmzFVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = free;	
+	} else if (txt.length  == 1){
+		document.getElementById('ex').value = "1" + txt + "B5XMLmzFVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = free;
+	} else if (txt.length  == 2){
+                document.getElementById('ex').value = "1" + txt + "5XMLmzFVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = free;
+        } else if (txt.length  == 3){
+                document.getElementById('ex').value = "1" + txt + "XMLmzFVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = free;
+        } else if (txt.length  == 4){
+                document.getElementById('ex').value = "1" + txt + "MLmzFVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = free;
+        } else if (txt.length  == 5){
+                document.getElementById('ex').value = "1" + txt + "LmzFVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = free;
+//                document.getElementById('price').value = '0.03 BTC';
+        } else if (txt.length  == 6){
+                document.getElementById('ex').value = "1" + txt + "mzFVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = '0.06 BTC';
+        } else if (txt.length  == 7){
+                document.getElementById('ex').value = "1" + txt + "zFVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = '0.4 BTC';
+        } else if (txt.length  == 8){
+                document.getElementById('ex').value = "1" + txt + "FVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = '1.7 BTC';
+        } else if (txt.length  == 9){
+                document.getElementById('ex').value = "1" + txt + "Vj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = 'that lenght is impossible for now, check later';
+        } else if (txt.length  == 10){
+                document.getElementById('ex').value = "1" + txt + "j8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = 'that lenght is impossible for now, check later';
+        } else if (txt.length  == 11){
+                document.getElementById('ex').value = "1" + txt + "8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = 'that lenght is impossible for now, check later';
+	}
+} else {
+        if (txt.length  == 0){
+                document.getElementById('ex').value = "1" + txt + "zB5XMLmzFVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = free;
+        } else if (txt.length  == 1){
+                document.getElementById('ex').value = "1" + txt + "B5XMLmzFVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = free;
+        } else if (txt.length  == 2){
+                document.getElementById('ex').value = "1" + txt + "5XMLmzFVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = free;
+        } else if (txt.length  == 3){
+                document.getElementById('ex').value = "1" + txt + "XMLmzFVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = free;
+        } else if (txt.length  == 4){
+                document.getElementById('ex').value = "1" + txt + "MLmzFVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = free;
+        } else if (txt.length  == 5){
+                document.getElementById('ex').value = "1" + txt + "LmzFVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = free;
+        } else if (txt.length  == 6){
+                document.getElementById('ex').value = "1" + txt + "mzFVj8ALj6mfBsbifRoD4miY36v";
+//                document.getElementById('price').value = '0.03 BTC';
+		document.getElementById('price').value = free;
+        } else if (txt.length  == 7){
+                document.getElementById('ex').value = "1" + txt + "zFVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = '0.06 BTC';
+        } else if (txt.length  == 8){
+                document.getElementById('ex').value = "1" + txt + "FVj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = '0.3 BTC';
+        } else if (txt.length  == 9){
+                document.getElementById('ex').value = "1" + txt + "Vj8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = '0.8 BTC';
+        } else if (txt.length  == 10){
+                document.getElementById('ex').value = "1" + txt + "j8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = 'that lenght is impossible for now, check later';
+        } else if (txt.length  == 11){
+                document.getElementById('ex').value = "1" + txt + "8ALj6mfBsbifRoD4miY36v";
+                document.getElementById('price').value = 'that lenght is impossible for now, check later';
+        }
+}
+}
+</script>
+</td>
+</tr>
+<td colspan="6" align="center" width="100%">
+<div class="pure-controls">
+<button type="submit" class="pure-button pure-button-primary">Generate</button>
+</div>
+</fieldset>
+</form>
+</td>
+</tr>
+<tr>
+<td colspan="6" align="center" id="28582">
+<br><br><br><br><br><br>
+<span style="color:#00cc00">Six letters vanity address is now FREE</span>
+<br><br>
+<span style="color:#979797">Generated: <b>25556</b> Queue: <b>0</b></span>
+<br><br><br><br><br>
+<span style="color: #757575;">Donations: <a href="https://blockchain.info/address/1VanityeNpkB3BwFXCDynrejjQYpyDTz7" alt="bitcoin vanity address example" title="bitcoin vanity address example" target="_blank"><span style="color:#757575">1<b>Vanity</b>eNpkB3BwFXCDynrejjQYpyDTz7</span></a><br>
+Created by <a href="http://versero.pl/" alt="server administration, security" title="server administration, security" target="_blank"><span style="color:#979797">versero.pl</span></a> &copy; websites, server administration, security
+<br><br><br><br><br><br>
+<table style="width:600px;" align="center">
+<tr>
+<td valign="top" style="width:30%;color:#757575;">
+<h4>Informations</h4>
+ 
+<a href="vanity-bulk.html" alt="Bitcoin bulk vanity" title="Bitcoin bulk vanity"><span style="color:#757575">Bulk Generation</span></a><br>
+<a href="faq.html" alt="Bitcoin faq" title="Bitcoin faq"><span style="color:#757575">FAQ</span></a><br>
+<a href="contact.html" alt="Bitcoin Vanity Address Generator Online" title="Bitcoin Vanity Address Generator Online"><span style="color:#757575">Contact Us</span></a>
+</td>
+<td>&nbsp;&nbsp;</td>
+<td valign="top" style="width:30%;color:#757575;">
+<h4>Dictionary</h4>
+<a href="bitcoin-vanity-address.html" alt="Bitcoin Vanity Address" title="Bitcoin Vanity Address"><span style="color:#757575">Vanity Address</span></a><br>
+<a href="bitcoin-paper-wallet.html" alt="Bitcoin Paper Wallet" title="Bitcoin Paper Wallet"><span style="color:#757575">Paper Wallet</span></a><br>
+</td>
+<td>&nbsp;&nbsp;</td>
+<td valign="top" style="width:30%;color:#757575;">
+<h4>Follow Us</h4>
+<a href="https://twitter.com/BitcoinVanity" alt="Bitcoin Vanity Address" title="Bitcoin Vanity Address" target="_blank"><span style="color:#757575">Twitter</span></a>
+</td>
+</tr>
+</table>
+<br><br><br>
+<div align="center" style="color:#555"><b>2014-2017</b></div>
+<br><br><br>
+</span>
+</td>
+</tr>
+</table>
+</body>
+
+<!-- Mirrored from bitcoinvanitygen.com/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Feb 2017 11:45:40 GMT -->
+</html>
